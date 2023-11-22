@@ -8,7 +8,6 @@ for (i = 0; i < myNodelist.length; i++) {
   myNodelist[i].appendChild(span);
 }
 
-// Click on a close button to hide the current list item
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
@@ -18,7 +17,6 @@ for (i = 0; i < close.length; i++) {
   }
 }
 
-// Add a "checked" symbol when clicking on a list item
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
@@ -26,7 +24,6 @@ list.addEventListener('click', function(ev) {
   }
 }, false);
 
-// Create a new list item when clicking on the "Add" button
 function newElement() {
   var li = document.createElement("li");
   var inputValue = document.getElementById("myInput").value;
@@ -95,28 +92,23 @@ function removeTask(element) {
 function removeTask(element) {
   var div = element.parentElement;
 
-  // Add a class to initiate the fade-out animation
   div.classList.add('fade-out');
 
-  // Wait for the animation to complete before removing the element
   setTimeout(function() {
       div.style.display = "none";
       div.parentNode.removeChild(div);
   }, 600); // 300ms matches the duration of the CSS transition
 }
 
-// Load tasks from local storage on page load
 window.onload = function() {
   loadTasks();
 };
 
-// Save tasks to local storage
 function saveTasks() {
   var tasks = document.getElementById("tasks").innerHTML;
   localStorage.setItem("tasks", tasks);
 }
 
-// Load tasks from local storage
 function loadTasks() {
   var tasks = localStorage.getItem("tasks");
   if (tasks) {
@@ -126,7 +118,6 @@ function loadTasks() {
   }
 }
 
-// Add a new task
 function newElement() {
   var inputValue = document.getElementById("myInput").value;
 
@@ -138,7 +129,6 @@ function newElement() {
       document.getElementById("tasks").appendChild(li);
       li.appendChild(createCloseButton());
 
-      // Clear the input field
       document.getElementById("myInput").value = "";
 
       // Save tasks to local storage after adding a new task
@@ -146,7 +136,6 @@ function newElement() {
   }
 }
 
-// Add a close button
 function createCloseButton() {
   var span = document.createElement("span");
   var txt = document.createTextNode("×");
@@ -158,7 +147,6 @@ function createCloseButton() {
   return span;
 }
 
-// Remove a task
 function removeTask(element) {
   var div = element.parentElement;
   div.classList.add('fade-out');
@@ -169,7 +157,6 @@ function removeTask(element) {
   }, 300);
 }
 
-// Add event listeners for close buttons on loaded tasks
 function addCloseButtonListeners() {
   var closeButtons = document.getElementsByClassName("close");
   for (var i = 0; i < closeButtons.length; i++) {
