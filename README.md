@@ -30,3 +30,12 @@ Remove:
 This was my first time programming with Javascript so I learned alot building this website. Some of the concepts I learned was:
 
 - DOM Manipulation
+- Event Handling
+- Functions
+- Conditional Statements
+- Loops
+- Local Storage
+- Timeouts
+- CSS Transitions
+
+Overall, this project allowed me to get some exposure to Javascript. This allows me to continue advancing in the space of web development and learn more advanced technologies in the future.
