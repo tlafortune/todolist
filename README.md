@@ -11,3 +11,17 @@ Features:
 This website is used in a very simple way. When you load up the webpage you get met with a screen like this:
 
 ![image](https://github.com/tlafortune/todolist/assets/120570927/428df6c4-bf7b-43a7-b5f8-5f86abc511d3)
+
+After, you can type in the tasks that you have to do for the day. For example, lets say you have to clean your room:
+
+![image](https://github.com/tlafortune/todolist/assets/120570927/693bf2a1-39fb-4fbb-b15f-5d7d72d50f96)
+
+This tasks can be interacted with by selecting it, to indicate that you have completed the task, or press the "x" to indicate that you want to remove that task.
+
+Complete:
+![image](https://github.com/tlafortune/todolist/assets/120570927/fd3150a4-42aa-49b4-a385-191d62fc7e57)
+
+Remove:
+![image](https://github.com/tlafortune/todolist/assets/120570927/e89de41e-3706-46d3-b2fc-f91ac24b47d5)
+
+
