@@ -25,3 +25,8 @@ Remove:
 ![image](https://github.com/tlafortune/todolist/assets/120570927/e89de41e-3706-46d3-b2fc-f91ac24b47d5)
 
 
+#What I Learned
+
+This was my first time programming with Javascript so I learned alot building this website. Some of the concepts I learned was:
+
+- DOM Manipulation
